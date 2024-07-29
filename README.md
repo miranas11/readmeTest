@@ -196,7 +196,7 @@ AdminSchema.pre("save", async function (next) {
 -   If the validaiton of the mongoDB are not met we get the message from the backend and show it in red as error
     <img src="readMeImages/image_1.png" alt="Validation Error" width="200" height="300">
 
--   After succesfull login or register we get a jwt token that we store in the localStorage also we decode the token and store the decoded data in adminData cookie which is then used to show the name of admin in navbar
+-   After succesfull login or register we get a jwt token that we store in the localStorage also we decode the token and store the decoded data in adminData cookie which is then used to show the name of admin in navbar.
     <img src="readMeImages/image_2.png" alt="Validation Error" width="400" height="300">
 -   Also if we try to open the PropertyPage with login on the admin side it checks if token is present then goes to backend to validate the token if both false the it redirects to login page
 
@@ -220,6 +220,7 @@ AdminSchema.pre("save", async function (next) {
     <img src="readMeImages/image_5.png" alt="Admin PropertyCard " width="350" height="300">
     <img src="readMeImages/image_6.png" alt="User PropertyCard " width="350" height="300">
 -   Clicking on the i am intrested button shows up a form to fill you details
+-   After the user fills the intrested form the user data is stored context and if we click i am intrested again on other property we dont have to fill the form again.
     <br>
     <img src="readMeImages/image_7.png" alt="User PropertyCard " width="300" height="300">
 -   After filling the form we call the addLead Api and add the user as lead to that particular property
