@@ -209,34 +209,34 @@ If you have any questions or suggestions, please contact:
 
 -   This component opens a login page has a link to switch the login component to register
 -   If the validaiton of the mongoDB are not met we get the message from the backend and show it in red as error
-    <!-- <img src="readMeImages/image_1.png" alt="Validation Error" width="200" height="300"> -->
+    <img src="readMeImages/image_1.png" alt="Validation Error" width="200" height="300">
 
 -   After succesfull login or register we get a jwt token that we store in the localStorage also we decode the token and store the decoded data in adminData cookie which is then used to show the name of admin in navbar
-    <!-- <img src="readMeImages/image_2.png" alt="Validation Error" width="400" height="300"> -->
+    <img src="readMeImages/image_2.png" alt="Validation Error" width="400" height="300">
 -   Also if we try to open the PropertyPage with login on the admin side it checks if token is present then goes to backend to validate the token if both false the it redirects to login page
 
 ### PropertyList for Admin and User
 
 -   After succesfull login or after user visiting the site we show the porpertylist component that contains an navbar ,a timeline image and then the list of properties shown using propertyCard component.
-    <!-- <img src="readMeImages/image_3.png" alt="Validation Error" width="600" height="400"> -->
+    <img src="readMeImages/image_3.png" alt="Validation Error" width="600" height="400">
 -   Here we make a call to backend to get all the properties data and map every propety to a propertyCard
 -   For admin we have a button to create a new propety
     <br>
-    <!-- <img src="readMeImages/image_4.png" alt="Validation Error" width="370" height="300"> -->
+    <img src="readMeImages/image_4.png" alt="Validation Error" width="370" height="300">
 -   Whenver we create a property,show interest or get a message we show a dialogue box a bottom right corner.
-    <!-- <img src="readMeImages/image_8.png" alt="Validation Error" width="250" height="100">
-    <img src="readMeImages/image_9.png" alt="Validation Error" width="250" height="100"> -->
+    <img src="readMeImages/image_8.png" alt="Validation Error" width="250" height="100">
+    <img src="readMeImages/image_9.png" alt="Validation Error" width="250" height="100">
 
 ### PropertyCard for Admin and User
 
 -   This contains a image and data of a property.
 -   For admin we have a show leads button that shows how many users are intrested in that property.
 -   For users we have a i am intrested button that opens a form to submit their interest.
-    <!-- <img src="readMeImages/image_5.png" alt="Admin PropertyCard " width="350" height="300">
-    <img src="readMeImages/image_6.png" alt="User PropertyCard " width="350" height="300"> -->
+    <img src="readMeImages/image_5.png" alt="Admin PropertyCard " width="350" height="300">
+    <img src="readMeImages/image_6.png" alt="User PropertyCard " width="350" height="300">
 -   Clicking on the i am intrested button shows up a form to fill you details
-    <!-- <br>
-    <img src="readMeImages/image_7.png" alt="User PropertyCard " width="300" height="300"> -->
+    <br>
+    <img src="readMeImages/image_7.png" alt="User PropertyCard " width="300" height="300">
 -   After filling the form we call the addLead Api and add the user as lead to that particular property
 
 ### AuthRoute (Higher Order Comonent)
