@@ -312,6 +312,26 @@ const token = jwt.sign(
 res.status(201).json({ userCreated: true, token: token });
 ```
 
+## Password Ecnryption (bcrypt)
+
+-   We used bcrypt ot encrypt password
+-   We created methods in the adminModel itself
+
+```javascript
+AdminSchema.statics.findAndValidate = async function (email, password) {
+    const foundUser = await this.findOne({ email });
+    if (!foundUser) return false;
+    const validPassword = await bcrypt.compare(password, foundUser.password);
+    return validPassword ? foundUser : false;
+};
+
+AdminSchema.pre("save", async function (next) {
+    if (!this.isModified("password")) next();
+    this.password = await bcrypt.hash(this.password, 12);
+    next();
+});
+```
+
 ## Contact
 
 If you have any questions or suggestions, please contact:
