@@ -229,3 +229,5 @@ If you have any questions or suggestions, please contact:
 -   This contains a image and data of a property.
 -   For admin we have a show leads button that shows how many users are intrested in that property.
 -   For users we have a i am intrested button that opens a form to submit their interest.
+    <img src="readMeImages/image_4.png" alt="Admin PropertyCard " width="400" height="300">
+    <img src="readMeImages/image_5.png" alt="User PropertyCard " width="400" height="300">
