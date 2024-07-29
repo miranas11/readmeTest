@@ -7,7 +7,6 @@ This project is a web-based application built using Node.js, Express, and MongoD
 -   [Live Demo](#live-demo)
 -   [Installation](#installation)
 -   [Technologies Used](#technologies-used)
--   [Usage](#usage)
 -   [API Endpoints](#api-endpoints)
 -   [MongoDB Models](#mongodb-models)
 -   [Component Details (REACT)](#component-details-react)
@@ -85,17 +84,6 @@ Note: The first request is going to take around 60 secs to start the server.
 -   axios: A promise-based HTTP client for the browser and Node.js.
 -   react-router-dom: A collection of navigational components that compose declaratively with your application.
 -   js-cookie: A simple, lightweight JavaScript API for handling browser cookies.
-
-## Usage
-
-For Users:
-Open your browser and go to http://localhost:3001/home
-Use the click interest button to show your interest in a property
-
-For Admins:
-Open your browser and go to http://localhost:3001/admin.
-Login or Register
-Use the form to create a new property or edit an existing property.
 
 ## API Endpoints
 
