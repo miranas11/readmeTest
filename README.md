@@ -212,7 +212,7 @@ If you have any questions or suggestions, please contact:
     <img src="readMeImages/image_1.png" alt="Validation Error" width="200" height="300">
 
 -   After succesfull login or register we get a jwt token that we store in the localStorage also we decode the token and store the decoded data in adminData cookie which is then used to show the name of admin in navbar
-    <img src="readMeImages/image_2.png" alt="Validation Error" width="200" height="300">
+    <img src="readMeImages/image_2.png" alt="Validation Error" width="400" height="300">
 -   Also if we try to open the PropertyPage with login on the admin side it checks if token is present then goes to backend to validate the token if both false the it redirects to login page
 
 ### PropertyList for Admin and User
