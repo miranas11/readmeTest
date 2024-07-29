@@ -271,3 +271,35 @@ const AuthRoute = ({ children }) => {
     return isLoading ? <Loading /> : <div>{children}</div>;
 };
 ```
+
+## Backend Structure
+
+### isAuthorized Middleware
+
+-   We use this middlewar in all the api calls that needs a admin logged in
+-   We send the jwt token in the header of request on this middleware validated the jwt token
+-   If no token or validation fails to sends the corresponding error code and message and we handle and redirect to login page in front end
+
+```javascript
+const isAuthorized = (req, res, next) => {
+    const header = req.headers["authorization"];
+
+    const token = header.slice(7);
+
+    if (!token) {
+        return res.status(403).json({ error: "No token provided" });
+    }
+
+    jwt.verify(token, config.secretKey, (err, user) => {
+        if (err) {
+            return res
+                .status(500)
+                .json({ error: "Failed to authenticate token" });
+        }
+
+        req.user = user;
+
+        next();
+    });
+};
+```
