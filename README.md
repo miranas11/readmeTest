@@ -218,7 +218,7 @@ If you have any questions or suggestions, please contact:
 ### PropertyList for Admin and User
 
 -   After succesfull login or after user visiting the site we show the porpertylist component that contains an navbar ,a timeline image and then the list of properties shown using propertyCard component.
-    <img src="readMeImages/image_3.png" alt="Validation Error" width="500" height="400">
+    <img src="readMeImages/image_3.png" alt="Validation Error" width="600" height="400">
 -   Here we make a call to backend to get all the properties data and map every propety to a propertyCard
 -   For admin we have a button to create a new propety
 
