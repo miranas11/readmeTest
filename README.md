@@ -301,7 +301,7 @@ const isAuthorized = (req, res, next) => {
 };
 ```
 
-### jwt creation
+### JWT creation
 
 -   After creating new user or succesful login of user we create a jwt token and send it in response.
 
@@ -314,7 +314,7 @@ const token = jwt.sign(
 res.status(201).json({ userCreated: true, token: token });
 ```
 
-## Password Ecnryption (bcrypt)
+### Password Ecnryption (bcrypt)
 
 -   We used bcrypt ot encrypt password
 -   We created methods in the adminModel itself.
