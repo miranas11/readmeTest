@@ -221,7 +221,7 @@ If you have any questions or suggestions, please contact:
     <img src="readMeImages/image_3.png" alt="Validation Error" width="600" height="400">
 -   Here we make a call to backend to get all the properties data and map every propety to a propertyCard
 -   For admin we have a button to create a new propety
-    <img src="readMeImages/image_4.png" alt="Validation Error" width="300" height="300">
+    <img src="readMeImages/image_4.png" alt="Validation Error" width="400" height="300">
 
 ### PropertyCard for Admin and User
 
