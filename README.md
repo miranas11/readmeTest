@@ -114,6 +114,8 @@ Use the form to create a new property or edit an existing property.
 
 ### PropertyCard Model
 
+-   To make sure that there are no property with same community,building and unit we are creating a index of combination of all three properties.
+
 ```javascript
 const PropertyCardSchema = new Schema({
     community: {
