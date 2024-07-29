@@ -224,8 +224,8 @@ If you have any questions or suggestions, please contact:
     <br>
     <img src="readMeImages/image_4.png" alt="Validation Error" width="370" height="300">
 -   Whenver we create a property,show interest or get a message we show a dialogue box a bottom right corner.
-    <img src="readMeImages/image_8.png" alt="Validation Error" width="500" height="200">
-    <img src="readMeImages/image_9.png" alt="Validation Error" width="500" height="200">
+    <img src="readMeImages/image_8.png" alt="Validation Error" width="250" height="100">
+    <img src="readMeImages/image_9.png" alt="Validation Error" width="250" height="100">
 
 ### PropertyCard for Admin and User
 
