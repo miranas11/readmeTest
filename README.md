@@ -232,5 +232,6 @@ If you have any questions or suggestions, please contact:
     <img src="readMeImages/image_5.png" alt="Admin PropertyCard " width="350" height="300">
     <img src="readMeImages/image_6.png" alt="User PropertyCard " width="350" height="300">
 -   Clicking on the i am intrested button shows up a form to fill you details
-    <img src="readMeImages/image_7.png" alt="User PropertyCard " width="200" height="300">
+    <br>
+    <img src="readMeImages/image_7.png" alt="User PropertyCard " width="300" height="300">
 -   After filling the form we call the addLead Api and add the user as lead to that particular property
