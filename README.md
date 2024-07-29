@@ -10,6 +10,8 @@ This project is a web-based application built using Node.js, Express, and MongoD
 -   [Usage](#usage)
 -   [API Endpoints](#api-endpoints)
 -   [MongoDB Models](#mongodb-models)
+-   [Component Details (REACT)](#component-details-react)
+-   [Backend Structure](#backend-structure)
 -   [Contact](#contact)
 
 ## Live Demo
@@ -196,13 +198,6 @@ AdminSchema.pre("save", async function (next) {
 });
 ```
 
-## Contact
-
-If you have any questions or suggestions, please contact:
-
--   Name: Mir Anas
--   Email: anasmir24@gmail.com
-
 ## Component Details (REACT)
 
 ### Home Component (login and Register) for Admin only
@@ -303,3 +298,10 @@ const isAuthorized = (req, res, next) => {
     });
 };
 ```
+
+## Contact
+
+If you have any questions or suggestions, please contact:
+
+-   Name: Mir Anas
+-   Email: anasmir24@gmail.com
