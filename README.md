@@ -239,4 +239,35 @@ If you have any questions or suggestions, please contact:
     <img src="readMeImages/image_7.png" alt="User PropertyCard " width="300" height="300">
 -   After filling the form we call the addLead Api and add the user as lead to that particular property
 
-### Warning Modal
+### AuthRoute (Higher Order Comonent)
+
+-   Created a higher order component to make sure that admin is logged in and the jwt token is valid.
+-   If it is not valid or admin is not logged in it redirects to login page
+
+```javascript
+const AuthRoute = ({ children }) => {
+    const [isLoading, setIsLoading] = useState(true);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const token = localStorage.getItem("token");
+        if (!token) {
+            navigate("/admin");
+            return;
+        }
+        const validate = async () => {
+            const response = await authController.validateToken();
+            console.log(response);
+            if (response.status === 500) {
+                navigate("/admin");
+            } else {
+                setIsLoading(false);
+            }
+        };
+
+        validate();
+    }, [navigate]);
+
+    return isLoading ? <Loading /> : <div>{children}</div>;
+};
+```
