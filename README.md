@@ -331,7 +331,3 @@ If you have any questions or suggestions, please contact:
 
 -   Name: Mir Anas
 -   Email: anasmir24@gmail.com
-
-```
-
-```
