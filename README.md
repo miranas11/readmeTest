@@ -315,21 +315,23 @@ res.status(201).json({ userCreated: true, token: token });
 ## Password Ecnryption (bcrypt)
 
 -   We used bcrypt ot encrypt password
--   We created methods in the adminModel itself
+-   We created methods in the adminModel itself.
+-   First method is called whenever we save a docuemnt of Admin Model.The pre method is called before saving so it modifies a ecnrypts in password before saving
+-   In second method we are creating out own method findAndValidate which is used when we are trying to login in it finds the users and checks if the password matches
 
 ```javascript
+AdminSchema.pre("save", async function (next) {
+    if (!this.isModified("password")) next();
+    this.password = await bcrypt.hash(this.password, 12);
+    next();
+});
+
 AdminSchema.statics.findAndValidate = async function (email, password) {
     const foundUser = await this.findOne({ email });
     if (!foundUser) return false;
     const validPassword = await bcrypt.compare(password, foundUser.password);
     return validPassword ? foundUser : false;
 };
-
-AdminSchema.pre("save", async function (next) {
-    if (!this.isModified("password")) next();
-    this.password = await bcrypt.hash(this.password, 12);
-    next();
-});
 ```
 
 ## Contact
