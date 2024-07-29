@@ -209,7 +209,7 @@ If you have any questions or suggestions, please contact:
 
 -   This component opens a login page has a link to switch the login componet to register
 -   If the validaiton of the mongoDB are not met we get the message from the backend and show it in red as error
-    ![Validaton Error](readMeImages/image_1.png)
+    <img src="readMeImages/image_1.png" alt="Validation Error" width="500" height="300">
 
 -   After succesfull login or register we get a jwt token that we store in the localStorage also we decode the token and store the decoded data in adminData cookie which is then used to show the name of admin in navbar
 -   Also if we try to open the PropertyPage with login on the admin side it checks if token is present then goes to backend to validate the token if both false the it redirects to login page
