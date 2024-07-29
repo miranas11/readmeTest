@@ -222,12 +222,12 @@ If you have any questions or suggestions, please contact:
 -   Here we make a call to backend to get all the properties data and map every propety to a propertyCard
 -   For admin we have a button to create a new propety
     <br>
-    <img src="readMeImages/image_4.png" alt="Validation Error" width="400" height="300">
+    <img src="readMeImages/image_4.png" alt="Validation Error" width="370" height="300">
 
 ### PropertyCard for Admin and User
 
 -   This contains a image and data of a property.
 -   For admin we have a show leads button that shows how many users are intrested in that property.
 -   For users we have a i am intrested button that opens a form to submit their interest.
-    <img src="readMeImages/image_4.png" alt="Admin PropertyCard " width="400" height="300">
-    <img src="readMeImages/image_5.png" alt="User PropertyCard " width="400" height="300">
+    <img src="readMeImages/image_5.png" alt="Admin PropertyCard " width="350" height="300">
+    <img src="readMeImages/image_6.png" alt="User PropertyCard " width="350" height="300">
