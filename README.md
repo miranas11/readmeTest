@@ -271,7 +271,7 @@ const AuthRoute = ({ children }) => {
 
 ### isAuthorized Middleware
 
--   We use this middlewar in all the api calls that needs a admin logged in
+-   We use this middleware in all the api calls that needs a admin logged in
 -   We send the jwt token in the header of request on this middleware validated the jwt token
 -   If no token or validation fails to sends the corresponding error code and message and we handle and redirect to login page in front end
 
@@ -299,9 +299,26 @@ const isAuthorized = (req, res, next) => {
 };
 ```
 
+### jwt creation
+
+-   After creating new user or succesful login of user we create a jwt token and send it in response.
+
+```javascript
+const token = jwt.sign(
+    { email: admin.email, name: admin.name },
+    config.secretKey,
+    { expiresIn: "1h" }
+);
+res.status(201).json({ userCreated: true, token: token });
+```
+
 ## Contact
 
 If you have any questions or suggestions, please contact:
 
 -   Name: Mir Anas
 -   Email: anasmir24@gmail.com
+
+```
+
+```
